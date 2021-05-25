@@ -1,0 +1,11 @@
+We present you the five pillars of effective devops:
+
+Collaboration
+
+Hiring
+
+Affinity
+
+Tools
+
+Scaling
