@@ -1,0 +1,63 @@
+Wat is monitoring:
+ 	Monitoring is de actie van het observeren en controleren van het gedrag en de output van een systeem en zijn componenten in de tijd. 
+
+Wat valt hier onder:
+	metrics, 
+	logging, 
+	alerting, 
+	on-call, 
+	incident management
+
+Anti- Patterns:
+	Tool Obsession:
+		zo weinig als je nodig hebt om de klus te klaren 
+			metrics
+			logs
+	Monitoring-as-a-Job
+		monitoring is een skill, de persoon die de software maakt, de systemen beheert of het netwerk goed kent kan het beste de monitoring implementeren voor dat deel. 
+	Checkbox Monitoring
+		wanneer je monitoringsystemen hebt om alleen maar te zeggen: Je hebt ze 
+			je herkent dit als je systeem niet goed werkt maar je kan niet vertellen waarom. 
+	Monitoring als een pleister gebruiken 
+		Als je crapy software/hardware hebt gaat meer monitoring niet helpen. pak het echte probleem aan
+	Manual Configuration:
+		monitoring moet zo automatisch en makkelijk mogelijk zijn. 
+
+Design patterns:
+	Composable Monitoring:
+		gebruikt programmas die één ding goed doen. gebruik programma's die samen werken. 
+			• Data collectie
+			• Data opslag
+			• visualizatie
+			• Analyse en rapportage 
+			• Alerting
+
+	Monitor vanuit het gebruikersperspectief (de business waarde):
+		De gebruiker interreseert het niks wat de cpu load is heoveel memory er gebruikt wordt, ze willen hun data hebben
+
+	Kopen, niet bouwen:
+		jij bent niet de exper, en waarschijnlijk is het nog duurder om zelf te doen.
+	Continual Improvement:
+		wereldklasse wordt niet in een week bereikt, maar in maanden en jaren van consistente aandacht en verbetering.
+
+Alerts:
+	type meldingen:
+		Meldingen bedoeld om iemand wakker te maken 
+		Waarschuwingen bedoeld als een FYI `
+
+	maak voor iedere service een runbook zodat iemand anders ze kan afhandelen.
+		Wat is deze dienst en wat doet hij?
+		• Wie is er verantwoordelijk voor?
+		• Welke afhankelijkheden heeft het?
+		• Hoe ziet de infrastructuur ervoor eruit?
+		• Welke statistieken en logs zendt het uit, en wat betekenen ze?
+		• Welke waarschuwingen zijn ervoor ingesteld, en waarom? 
+
+Monitoring groupen
+	applicatie monitoring
+	server monitoring
+	netwerk monitoring
+	security monitoring
+
+	maar vergeet vooral configuratie tracking niet
+		
