@@ -1,0 +1,55 @@
+wat we zouden kunnen verbeteren:
+   process:
+	value stream denken: 
+		business -> ontwikkeling -> beheer -> processing -> validatie -> business
+	defineren en oordenen kanban board (confluence) klanten op Weighted shorted job first
+	grote feature items klant zodat ze afgerond kunnen worden in tijd
+		feature: korter beschrijving 
+			benifit: Measurable benifit
+		Enabler feature:
+			tenische investering om toekomstige features te kunnen uitvoeren
+		NFR (sticky items)
+	kwaliteit:
+		FLow (visualizeer en limit WIP, milestones objectief meetbaar)
+		Peer review ()
+		collectieve eigendom en standaarden
+			eigendom: iedereen mag iets aanpassen en de keten verbeteren
+			standaard: iedereen kan het werk snappen en kwaliteit behouden
+		Automatisering
+			To increase speed, accuracy, and consistency
+			1. Automate the processes that build, deploy, and release the solutio
+			2. Automate quality checks
+		generiek DoD: (generieke what qualiteit is en hoe het is ingebouwed)
+			Acceptance criteria have been met
+			Tests are automated
+			All test passed
+			NFRs have been met.
+			No must-fix defects
+			Relevant documentation updated.
+			Release notes
+
+	‘just in time’ and ‘just the right amount’ of requirements, design, architecture, and user experience guidanc
+	
+	team samen items laten oppakken van backlog  				werk verantwoordelijkheid van hele team maken
+        Team samen sizen van story/tasks (refinement planning)			collectief idee van hoeveel werk we oppakken
+	Coordinators (en team) samen sizen van epics				nodig voor prio
+	maximum op WIP zetten							verbetered efficienty door niet teveel parallel te doen en context switching te krijgen
+	iedere x weken een email wat bereikt is na klanten (process coordinator) Voortgang delen en wins	
+
+   process productie
+	Productie processen vastleggen (nifi aanpassingen, software aanpassingen, firmware upgrades)
+	Process Voorzichtig omgaan met data (waar hebben we data gearchifeerd)
+	
+   techniek:
+	System split (Kevin, NIFI)		Budget technisch en andere requirements
+	nifi custom blockjes?			WIl je echt veel processing op nifi doen?
+	authorizatie model nifi			Compiancy en bugs
+	 
+   Management
+	value streams (ITAP, SAT, KAB)
+	Budget split (ITAP, SAT, KAB), is al zo
+	prioriterings factor keten of opsplitsen team
+	Tester aannemen
+
+	
+	

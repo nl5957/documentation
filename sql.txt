@@ -1,0 +1,39 @@
+Temporal tables:
+System-time (“versioning”) vs. Business-time (“validity”)
+Business-time is the time for which a fact is true in the real world.
+System-time records the time period during which a database entry is accepted as correct. This enables queries that show the state of the database at a given time.
+
+waarom temporal tables:
+ * Wat waren de selectors op 10 oktober
+ * Mijn selectors zijn expired kunnen we ze weer bijzetten
+ * Ik wil de volledige history zien van selectors
+
+bhk ---> Debezium+kafka+app --> polaris --> selectors --> git --> ansible --> machine
+			          |
+		                kevin
+
+INSERT
+UPDATE
+DELETE
+
+SQL CREATE TABLE Lasten( 
+	selector_nr 	integer 	SERIAL,
+	name 		text 		PRIMARY KEY, 
+	state 		text 		NOT NULL,
+	Type 		text 		NOT NULL,
+	user_id		integer		REFERENCES users (user_id),    //ad_koppeling
+	selector 	jsonb 		NOT NULL, 
+	Artikel 	integer 	NOT NULL check Artikel IN (1), 
+	SubArtikel 	integer 	NOT NULL check Artikel IN (1), 
+	valid_period 	tstzrange 	NOT NULL DEFAULT tstzrange(current_timestamp, current_timestamp + INTERVAL '1 month'),
+	sys_period 	tstzrange 	NOT NULL DEFAULT tstzrange(current_timestamp, null),
+	CHECK state IN ('in-review', 'expired', 'active', 'cancelled'),
+	CHECK Type IN ('tera3', 'suricata'))
+	PRIMARY KEY(name)
+        primary key whithout overlap;
+);
+SQL CREATE TABLE Lasten_history (LIKE Lasten);
+SQL CREATE TRIGGER versioning_trigger BEFORE INSERT OR UPDATE OR DELETE ON Lasten FOR EACH ROW EXECUTE PROCEDURE versioning('sys_period', 'Lasten_history', true);
+
+
+Views??
