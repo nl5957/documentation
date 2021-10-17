@@ -1,24 +1,32 @@
-wat we zouden kunnen verbeteren:
    process:
-	value stream denken: 
-		business -> ontwikkeling -> beheer -> processing -> validatie -> business
-	defineren en oordenen kanban board (confluence) klanten op Weighted shorted job first
-	grote feature items klant zodat ze afgerond kunnen worden in tijd
-		feature: korter beschrijving 
-			benifit: Measurable benifit
+	valuestreams
+		a. business -> ontwikkeling -> beheer -> processing -> validatie -> business
+		b. business -> ontwikkeling -> beheer -> processing -> validatie -> business
+		c. business -> ontwikkeling -> beheer -> processing -> validatie -> business
+	ordenen klantitems op Weighted shorted job first
+	klantitems resizen zodat ze afgerond kunnen worden in PI
+		feature: 
+			- korte beschrijving 
+			- benifit: Measurable benifit
 		Enabler feature:
-			tenische investering om toekomstige features te kunnen uitvoeren
-		NFR (sticky items)
+			technische investering om toekomstige features te kunnen uitvoeren
 	kwaliteit:
-		FLow (visualizeer en limit WIP, milestones objectief meetbaar)
-		Peer review ()
+		limit WIP, 
+		Peer review
 		collectieve eigendom en standaarden
-			eigendom: iedereen mag iets aanpassen en de keten verbeteren
+			eigendom: iedereen mag iets aanpassen en de keten verbeteren, iederen helpt mee wat we oppakken
 			standaard: iedereen kan het werk snappen en kwaliteit behouden
 		Automatisering
 			To increase speed, accuracy, and consistency
 			1. Automate the processes that build, deploy, and release the solutio
 			2. Automate quality checks
+				code coverage
+				Testen
+				sonarcube
+				bug& issue tracking
+				load testing
+				Exception monitoring 
+				Log Monitoring
 		generiek DoD: (generieke what qualiteit is en hoe het is ingebouwed)
 			Acceptance criteria have been met
 			Tests are automated
@@ -27,14 +35,14 @@ wat we zouden kunnen verbeteren:
 			No must-fix defects
 			Relevant documentation updated.
 			Release notes
-
-	‘just in time’ and ‘just the right amount’ of requirements, design, architecture, and user experience guidanc
 	
 	team samen items laten oppakken van backlog  				werk verantwoordelijkheid van hele team maken
         Team samen sizen van story/tasks (refinement planning)			collectief idee van hoeveel werk we oppakken
+	iedereen verantwoordelijke maken voor productie draaien (niet alleen beheer)
+		Taak beheer: detecteren issues & helpen oplossen
+		Taak dev: detecteren issues & helpen oplossen
 	Coordinators (en team) samen sizen van epics				nodig voor prio
-	maximum op WIP zetten							verbetered efficienty door niet teveel parallel te doen en context switching te krijgen
-	iedere x weken een email wat bereikt is na klanten (process coordinator) Voortgang delen en wins	
+	maximum op WIP zetten							verbetered efficienty door niet teveel parallel te doen en context switching te krijgen	
 
    process productie
 	Productie processen vastleggen (nifi aanpassingen, software aanpassingen, firmware upgrades)
@@ -49,7 +57,7 @@ wat we zouden kunnen verbeteren:
 	value streams (ITAP, SAT, KAB)
 	Budget split (ITAP, SAT, KAB), is al zo
 	prioriterings factor keten of opsplitsen team
-	Tester aannemen
+	QA(Tester) aannemen
 
 	
 	
